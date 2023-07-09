@@ -104,15 +104,23 @@ def recomendacion(titulo: str):
     if pelicula_referencia.empty:
         return "No se encontró la película de referencia."
     
-    genero_referencia = pelicula_referencia['genres'].iloc[0]
+    # Obtener la puntuación de la película de referencia
+    puntuacion_referencia = pelicula_referencia['vote_average'].iloc[0]
 
-    # Filtrar las películas por género
-    peliculas_similares = df_movies[df_movies['genres'] == genero_referencia]
+    # Eliminar filas con valores faltantes en la columna de puntuación
+    df_cleaned = df_movies.dropna(subset=['vote_average'])
+
+    # Calcular la similitud de puntuación entre la película de referencia y el resto de películas
+    df_cleaned['similarity'] = df_cleaned['vote_average'].apply(lambda x: cosine_similarity([[puntuacion_referencia]], [[x]])[0][0])
+
+    # Ordenar las películas por score de similaridad en orden descendente
+    peliculas_similares = df_cleaned.sort_values('similarity', ascending=False)
 
     # Excluir la película de referencia de las recomendaciones
     peliculas_similares = peliculas_similares[peliculas_similares['title'] != titulo]
 
-    # Obtener las 5 películas más similares por género
-    peliculas_recomendadas = peliculas_similares.sample(n=5)['title'].tolist()
+    # Obtener los 5 nombres de las películas con mayor puntaje de similaridad
+    peliculas_recomendadas = peliculas_similares.head(5)['title'].tolist()
 
     return peliculas_recomendadas
+
