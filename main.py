@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 from fastapi import FastAPI
 import sklearn
-
+from sklearn.metrics.pairwise import cosine_similarity
 
 
 app= FastAPI()
@@ -96,12 +96,6 @@ def get_director(nombre_director):
 
     return movies_list
 
-
-from sklearn.metrics.pairwise import cosine_similarity
-
-app = FastAPI()
-
-df_movies = pd.read_csv('Dataset.csv')
 
 @app.get("/recomendacion/{titulo}")
 def recomendacion(titulo: str):
