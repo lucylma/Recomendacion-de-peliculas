@@ -50,7 +50,7 @@ Realizar un análisis exploratorio de los datos para investigar las relaciones e
 Se implementó un sistema de recomendación de películas basado en la similitud de puntuación entre películas. El sistema devuelve una lista de las 5 películas con mayor similaridad a una película dada, ordenadas por score de similaridad.
 
 <p align="center">
-<img src="https://https://medium.com/web-mining-is688-spring-2021/cosine-similarity-and-tfidf-c2a7079e13fa"  height=300>
+<img src="https://miro.medium.com/v2/resize:fit:640/format:webp/0*4IVXlcZV8Sm29h79.png"  height=300>
 </p>
 
 ## **Resultados y próximos pasos**
