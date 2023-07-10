@@ -32,14 +32,14 @@ Eliminar las columnas no utilizadas.<br>
 
 ## **1.2 Desarrollo de la API**
 
-Implementar una API utilizando el framework FastAPI para permitir el acceso a los datos de la empresa. La API cuenta con las siguientes funciones de endpoint:
-
-peliculas_idioma(Idioma: str): Devuelve la cantidad de películas producidas en el idioma especificado.
-peliculas_duracion(Pelicula: str): Devuelve la duración y el año de una película especificada.
-franquicia(Franquicia: str): Devuelve la cantidad de películas, la ganancia total y la ganancia promedio de una franquicia especificada.
-peliculas_pais(Pais: str): Devuelve la cantidad de películas producidas en el país especificado.
-productoras_exitosas(Productora: str): Devuelve el revenue total y la cantidad de películas de una productora especificada.
-get_director(nombre_director: str): Devuelve el éxito de un director especificado, incluyendo el nombre, fecha de lanzamiento, retorno, costo y ganancia de cada película en formato de lista.
+Implementar una API utilizando el framework FastAPI para permitir el acceso a los datos de la empresa. La API cuenta con las siguientes funciones de endpoint: <br>
+<br>
+peliculas_idioma(Idioma: str): Devuelve la cantidad de películas producidas en el idioma especificado.<br>
+peliculas_duracion(Pelicula: str): Devuelve la duración y el año de una película especificada.<br>
+franquicia(Franquicia: str): Devuelve la cantidad de películas, la ganancia total y la ganancia promedio de una franquicia especificada.<br>
+peliculas_pais(Pais: str): Devuelve la cantidad de películas producidas en el país especificado.<br>
+productoras_exitosas(Productora: str): Devuelve el revenue total y la cantidad de películas de una productora especificada.<br>
+get_director(nombre_director: str): Devuelve el éxito de un director especificado, incluyendo el nombre, fecha de lanzamiento, retorno, costo y ganancia de cada película en formato de lista.<br>
 
 ## **1.3 Análisis exploratorio de los datos (EDA)**
 
