@@ -23,23 +23,23 @@ Se desea desarrollar un proyecto para una empresa que ofrece servicios de agrega
 
 Se realizaron varias transformaciones de datos para limpiar y preparar el conjunto de datos:<br>
 <br>
-Desanidar los campos anidados como belongs_to_collection, production_companies y otros.<br>
-Rellenar los valores nulos de los campos revenue y budget con 0.<br>
-Eliminar las filas con valores nulos en el campo release_date.<br>
-Formatar las fechas en el formato AAAA-mm-dd y creé la columna release_year.<br>
-Crear la columna return para calcular el retorno de inversión como revenue / budget.<br>
-Eliminar las columnas no utilizadas.<br>
+1) Desanidar los campos anidados como belongs_to_collection, production_companies y otros.<br>
+2) Rellenar los valores nulos de los campos revenue y budget con 0.<br>
+3) Eliminar las filas con valores nulos en el campo release_date.<br>
+4) Formatar las fechas en el formato AAAA-mm-dd y creé la columna release_year.<br>
+5) Crear la columna return para calcular el retorno de inversión como revenue / budget.<br>
+6) Eliminar las columnas no utilizadas.<br>
 
 ## **1.2 Desarrollo de la API**
 
 Implementar una API utilizando el framework FastAPI para permitir el acceso a los datos de la empresa. La API cuenta con las siguientes funciones de endpoint: <br>
 <br>
-peliculas_idioma(Idioma: str): Devuelve la cantidad de películas producidas en el idioma especificado.<br>
-peliculas_duracion(Pelicula: str): Devuelve la duración y el año de una película especificada.<br>
-franquicia(Franquicia: str): Devuelve la cantidad de películas, la ganancia total y la ganancia promedio de una franquicia especificada.<br>
-peliculas_pais(Pais: str): Devuelve la cantidad de películas producidas en el país especificado.<br>
-productoras_exitosas(Productora: str): Devuelve el revenue total y la cantidad de películas de una productora especificada.<br>
-get_director(nombre_director: str): Devuelve el éxito de un director especificado, incluyendo el nombre, fecha de lanzamiento, retorno, costo y ganancia de cada película en formato de lista.<br>
+1) **peliculas_idioma(Idioma: str):** Devuelve la cantidad de películas producidas en el idioma especificado.<br>
+2) **peliculas_duracion(Pelicula: str):** Devuelve la duración y el año de una película especificada.<br>
+3) **franquicia(Franquicia: str):** Devuelve la cantidad de películas, la ganancia total y la ganancia promedio de una franquicia especificada.<br>
+4) **peliculas_pais(Pais: str):** Devuelve la cantidad de películas producidas en el país especificado.<br>
+5) **productoras_exitosas(Productora: str):** Devuelve el revenue total y la cantidad de películas de una productora especificada.<br>
+6) **get_director(nombre_director: str):** Devuelve el éxito de un director especificado, incluyendo el nombre, fecha de lanzamiento, retorno, costo y ganancia de cada película en formato de lista.<br>
 
 ## **1.3 Análisis exploratorio de los datos (EDA)**
 
