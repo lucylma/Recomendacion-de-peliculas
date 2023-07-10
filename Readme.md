@@ -21,14 +21,14 @@ Se desea desarrollar un proyecto para una empresa que ofrece servicios de agrega
 
 ## **1.1 Transformaciones de datos**
 
-Se realizaron varias transformaciones de datos para limpiar y preparar el conjunto de datos:
-
-Desanidar los campos anidados como belongs_to_collection, production_companies y otros.
-Rellenar los valores nulos de los campos revenue y budget con 0.
-Eliminar las filas con valores nulos en el campo release_date.
-Formatar las fechas en el formato AAAA-mm-dd y creé la columna release_year.
-Crear la columna return para calcular el retorno de inversión como revenue / budget.
-Eliminar las columnas no utilizadas.
+Se realizaron varias transformaciones de datos para limpiar y preparar el conjunto de datos:<br>
+<br>
+Desanidar los campos anidados como belongs_to_collection, production_companies y otros.<br>
+Rellenar los valores nulos de los campos revenue y budget con 0.<br>
+Eliminar las filas con valores nulos en el campo release_date.<br>
+Formatar las fechas en el formato AAAA-mm-dd y creé la columna release_year.<br>
+Crear la columna return para calcular el retorno de inversión como revenue / budget.<br>
+Eliminar las columnas no utilizadas.<br>
 
 ## **1.2 Desarrollo de la API**
 
