@@ -47,7 +47,7 @@ Realizar un análisis exploratorio de los datos para investigar las relaciones e
 
 ## **1.4 Sistema de recomendación**
 
-Se implementó un sistema de recomendación de películas basado en la similitud de puntuación entre películas. El sistema devuelve una lista de las 5 películas con mayor similaridad a una película dada, ordenadas por score de similaridad.
+Se implementó un sistema de recomendación de películas basado en la similitud de puntuación entre películas. El sistema devuelve una lista de las 5 películas con mayor similaridad a una película dada, ordenadas por score de similaridad. Para implementar el sistema de recomendación se utilizó la similitud del coseno como medida de distancia
 
 <p align="center">
 <img src="https://miro.medium.com/v2/resize:fit:640/format:webp/0*4IVXlcZV8Sm29h79.png"  height=300>
