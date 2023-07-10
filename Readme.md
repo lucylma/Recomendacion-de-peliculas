@@ -49,6 +49,10 @@ Realizar un análisis exploratorio de los datos para investigar las relaciones e
 
 Se implementó un sistema de recomendación de películas basado en la similitud de puntuación entre películas. El sistema devuelve una lista de las 5 películas con mayor similaridad a una película dada, ordenadas por score de similaridad.
 
+<p align="center">
+<img src="https://https://medium.com/web-mining-is688-spring-2021/cosine-similarity-and-tfidf-c2a7079e13fa.png"  height=300>
+</p>
+
 ## **Resultados y próximos pasos**
 
 Hasta ahora, he logrado limpiar los datos, desarrollar una API funcional y crear un sistema de recomendación de películas. Los resultados son prometedores y el sistema de recomendación puede proporcionar a los usuarios sugerencias relevantes para su experiencia de streaming.
