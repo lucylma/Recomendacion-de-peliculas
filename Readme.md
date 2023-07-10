@@ -26,7 +26,7 @@ Se realizaron varias transformaciones de datos para limpiar y preparar el conjun
 1) Desanidar los campos anidados como belongs_to_collection, production_companies y otros.<br>
 2) Rellenar los valores nulos de los campos revenue y budget con 0.<br>
 3) Eliminar las filas con valores nulos en el campo release_date.<br>
-4) Formatar las fechas en el formato AAAA-mm-dd y creé la columna release_year.<br>
+4) Formatar las fechas en el formato AAAA-mm-dd y crear la columna release_year.<br>
 5) Crear la columna return para calcular el retorno de inversión como revenue / budget.<br>
 6) Eliminar las columnas no utilizadas.<br>
 
